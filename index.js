@@ -255,5 +255,14 @@ app.get('/health', async (req, res) => {
     }
 });
 
+// Add health check endpoint
+app.get('/container', (req, res) => {
+  res.status(200).json({
+    status: 'healthy',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime()
+  });
+});
+
 app.listen(PORT, HOST);
 console.log(`running on http://${HOST}:${PORT}`);
