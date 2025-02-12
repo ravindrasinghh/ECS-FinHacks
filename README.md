@@ -1,7 +1,4 @@
 ## ECS-FinHAcks 
-
-# Express API with Prometheus Metrics
-
 A Node.js Express API application with Prometheus metrics integration, Swagger documentation, and health monitoring endpoints.
 
 ## Features
@@ -48,25 +45,6 @@ npm install
 node index.js
 ```
 
-### Docker Deployment
-
-1. Build the Docker image:
-```bash
-docker build -t express-api .
-```
-
-2. Run the container:
-```bash
-docker run -p 8080:8080 \
-  -e AWS_REGION=us-east-1 \
-  -e DB_HOST=your-rds-endpoint \
-  -e DB_PORT=your-db-port \
-  -e DB_USERNAME=your-username \
-  -e DB_PASSWORD=your-password \
-  -e DB_NAME=your-database-name \
-  express-api
-```
-
 ## API Endpoints
 
 - `GET /` - Welcome message
@@ -83,9 +61,6 @@ Swagger UI documentation is available at:
 ```
 http://localhost:8080/api-docs
 ```
-
-## Monitoring
-
 ### Prometheus Metrics
 
 Prometheus metrics are exposed at:
@@ -99,15 +74,3 @@ The application includes multiple health check endpoints:
 - Container health: `/container`
 - Application health: `/health`
 - Simple ping: `/ping`
-
-## Database Schema
-
-The application expects a table named `employees` with the following structure:
-
-```sql
-CREATE TABLE employees (
-    id INT PRIMARY KEY,
-    name VARCHAR(255),
-    position VARCHAR(255)
-);
-```
