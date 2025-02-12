@@ -53,7 +53,6 @@ node index.js
 - `GET /error` - Error simulation endpoint
 - `GET /db-check` - Database connection check
 - `GET /health` - Application health status
-- `GET /container` - Container health check
 
 ## API Documentation
 
