@@ -1,5 +1,5 @@
 ## ECS-FinHAcks 
-![ARCH](docs/ECS-Finhack.png)
+![ARCH](docs/ecs-devops.png)
 A Node.js Express API application with Prometheus metrics integration, Swagger documentation, and health monitoring endpoints.
 
 ## Features
