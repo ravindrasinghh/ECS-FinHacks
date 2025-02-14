@@ -1,4 +1,4 @@
-## ECS-FinHAcks 
+## ECS-FinHacks-Scaling-Microservices-with-AWS-ECS-Fargate-and-RDS
 ![ARCH](docs/ecs-devops.png)
 A Node.js Express API application with Prometheus metrics integration, Swagger documentation, and health monitoring endpoints.
 
